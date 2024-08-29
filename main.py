@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 import uvicorn
 import time
-from app import RecommendationSystem
+from model import RecommendationSystem
 
 recommender = RecommendationSystem()
 
