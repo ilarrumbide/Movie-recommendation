@@ -37,7 +37,7 @@ data = Dataset.load_from_df(u_data[['user_id', 'item_id', 'rating_centered']], r
 
 # Definir la grid de hiperparámetros
 param_grid = {
-    'n_factors': [20, 50, 100],
+    'n_factors': [10,20, 50, 100],
     'n_epochs': [20, 50],
     'lr_all': [0.005, 0.010],
     'reg_all': [0.02, 0.1]

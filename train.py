@@ -16,21 +16,6 @@ with open('data/u_data.pkl', 'rb') as f:
     u_data = pickle.load(f)
 
 
-# Load preprocessed data
-with open('data/user_movie_ratings.pkl', 'rb') as f:
-    user_movie_ratings = pickle.load(f)
-
-with open('data/u_user_encoded.pkl', 'rb') as f:
-    u_user = pickle.load(f)
-
-with open('data/u_item.pkl', 'rb') as f:
-    u_item = pickle.load(f)
-
-with open('data/u_data.pkl', 'rb') as f:
-    u_data = pickle.load(f)
-
-
-
 # Centrar las calificaciones restando la media del usuario
 u_data['rating_centered'] = u_data.groupby('user_id')['rating'].transform(lambda x: x - x.mean())
 
