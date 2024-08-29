@@ -54,25 +54,34 @@ Para ejecutar la aplicación, utiliza el siguiente comando:
 uvicorn app:app --reload
 Esto iniciará el servidor FastAPI luego ve a http://127.0.0.1:8000/docs para probrar los Endpoints
 
-Endpoints de la API
+## Endpoints de la API
+
 Los siguientes endpoints están disponibles:
 
-Agregar Usuario
+### Agregar Usuario
 
-URL: /add_user
-Método: POST
-Cuerpo: Objeto JSON con detalles del usuario (user_id, age, gender, occupation, zip_code)
-Respuesta: Mensaje de confirmación
-Obtener Recomendaciones
+- **URL:** `/add_user`
+- **Método:** `POST`
+- **Cuerpo:** Objeto JSON con detalles del usuario:
+  - `user_id`
+  - `age`
+  - `gender`
+  - `occupation`
+  - `zip_code`
+- **Respuesta:** Mensaje de confirmación
 
-URL: /recommend/{user_id}
-Método: GET
-Respuesta: Lista de películas recomendadas con calificaciones predichas
-Obtener Información del Usuario
+### Obtener Recomendaciones
 
-URL: /information/{user_id}
-Método: GET
-Respuesta: Lista de películas calificadas por el usuario
+- **URL:** `/recommend/{user_id}`
+- **Método:** `GET`
+- **Respuesta:** Lista de películas recomendadas con calificaciones predichas
+
+### Obtener Información del Usuario
+
+- **URL:** `/information/{user_id}`
+- **Método:** `GET`
+- **Respuesta:** Lista de películas calificadas por el usuario
+
 
 
 Este README proporciona una guía clara para configurar, ejecutar y utilizar el sistema de recomendación.
