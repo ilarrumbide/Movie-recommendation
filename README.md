@@ -49,7 +49,7 @@ Sigue estos pasos para configurar y ejecutar el proyecto:
 
     ```bash
     git clone https://github.com/ilarrumbide/Movie-recommendation.git
-    cd sistema-recomendacion-peliculas
+    cd Movie-recommendation
     ```
 
 2. **Crea y activa un entorno virtual (opcional pero recomendado):**
