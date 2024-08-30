@@ -2,9 +2,15 @@
 
 Este proyecto implementa un sistema de recomendación de películas utilizando técnicas de filtrado colaborativo. Proporciona una API basada en FastAPI para agregar usuarios, obtener recomendaciones y recuperar información de usuarios.
 
+## Objetivo del Trabajo
+
+El objetivo de este proyecto fue desarrollar un sistema que, dado un usuario, sugiera las 10 mejores películas basadas en sus preferencias previas. El sistema debía ser implementado, documentado y subido a un repositorio en GitHub, con la posibilidad de agregar características opcionales para obtener puntos adicionales.
+
 # Índice
 - [Requisitos previos](#requisitos-previos)
 - [Documentación de RecommendationSystem](#documentación-de-recommendationsystem)
+- [Checklist de Entrega](#checklist-de-entrega)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
  
 
 ## Requisitos previos
@@ -158,3 +164,30 @@ La Descomposición en Valores Singulares (SVD) es una técnica de factorización
    - Considera escenarios como usuarios sin películas calificadas o sin usuarios similares.
 
 Esta implementación equilibra la eficiencia computacional con técnicas avanzadas de recomendación, ofreciendo una solución sólida y adaptable para sistemas de recomendación de películas.
+
+
+# Checklist de Entrega
+
+Por favor, marca con una "X" los ítems que has completado:
+
+1. [x] Exploración y Preparación de Datos  --> analisis_exploratorio.ipynb 
+2. [x] Desarrollo del Sistema de Recomendación --> model.py en este archivo se encuentra la implementación y aca el entrenamiento del modelo train_center.py  
+3. [x] Documentación y Entrega  --> Read me
+
+### Opcionales Completados
+
+1. [x] Implementación de API RESTful utilizando FastAPI  --> main.py  
+2. [ ] Despliegue en la Nube
+3. [x] Pruebas de Rendimiento con datasets de diferentes tamaños.   --> test_1m_movies.py 
+4. [ ] Uso de Herramientas Avanzadas (AWS SageMaker, Azure Machine Learning, Google AI Platform)
+
+## Tecnologías Utilizadas
+
+- **Python**: Lenguaje principal para el desarrollo del sistema de recomendación.
+- **FastAPI**: Framework utilizado para implementar la API RESTful que permite consultar recomendaciones.
+- **scikit-surprise**: Librería empleada para la implementación de algoritmos de filtrado colaborativo.
+- **NumPy**: Utilizado para realizar operaciones matemáticas eficientes y vectorizadas.
+- **Pickle**: Herramienta para la serialización y deserialización rápida de datos.
+- **Pandas**: Utilizado para la manipulación y análisis de los datos.
+- **SVD (Singular Value Decomposition)**: Técnica de factorización matricial utilizada en el modelo de recomendación.
+- **Git**: Control de versiones para gestionar el código fuente.
