@@ -2,6 +2,21 @@
 
 Este proyecto implementa un sistema de recomendación de películas utilizando técnicas de filtrado colaborativo. Proporciona una API basada en FastAPI para agregar usuarios, obtener recomendaciones y recuperar información de usuarios.
 
+# Índice
+
+- [Documentación de RecommendationSystem](#documentación-de-recommendationsystem)
+  - [Descripción General](#descripción-general)
+  - [Puntos Clave](#puntos-clave)
+    - [Carga de Datos Eficiente](#carga-de-datos-eficiente)
+    - [Soporte para Usuarios Nuevos](#soporte-para-usuarios-nuevos)
+    - [Recomendaciones Personalizadas](#recomendaciones-personalizadas)
+      - [Explicación de SVD](#explicación-de-svd)
+    - [Manejo del Inicio en Frío](#manejo-del-inicio-en-frío)
+    - [Optimización del Rendimiento](#optimización-del-rendimiento)
+    - [Flexibilidad](#flexibilidad)
+    - [Preprocesamiento de Datos](#preprocesamiento-de-datos)
+    - [Manejo de Casos Especiales](#manejo-de-casos-especiales)
+
 ## Requisitos previos
 
 Antes de comenzar, asegúrate de cumplir con los siguientes requisitos:
