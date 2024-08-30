@@ -48,7 +48,7 @@ Sigue estos pasos para configurar y ejecutar el proyecto:
 1. **Clona el repositorio:**
 
     ```bash
-    git clone https://github.com/tuusuario/sistema-recomendacion-peliculas.git
+    git clone https://github.com/ilarrumbide/Movie-recommendation.git
     cd sistema-recomendacion-peliculas
     ```
 
