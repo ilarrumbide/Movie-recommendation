@@ -112,3 +112,44 @@ sistema-recomendacion-peliculas/
 └── train_center.py              # Script para entrenar el modelo con centralización
 
 ```
+# Documentación de RecommendationSystem
+
+## Descripción General
+`RecommendationSystem` es una clase diseñada para ofrecer un sistema de recomendación de películas eficiente y adaptable. Utiliza técnicas de filtrado colaborativo y maneja casos de inicio en frío para brindar recomendaciones personalizadas.
+
+## Puntos Clave
+
+1. **Carga de Datos Eficiente**:
+   - Implementa carga perezosa, cargando datos solo cuando es necesario.
+   - Utiliza archivos pickle para deserializar datos rápidamente.
+
+2. **Soporte para Usuarios Nuevos**:
+   - Permite agregar usuarios nuevos al sistema de manera dinámica.
+   - Realiza validaciones de los datos de entrada para asegurar la integridad.
+
+3. **Recomendaciones Personalizadas**:
+   - Usa un algoritmo de filtrado colaborativo para los usuarios ya existentes.
+   - Implementa SVD (Descomposición en Valores Singulares) para predicciones más precisas.
+
+### Explicación de SVD:
+La Descomposición en Valores Singulares (SVD) es una técnica de factorización matricial utilizada en la recomendación de películas para descomponer la matriz de interacciones usuario-película en tres componentes fundamentales: una matriz de usuarios (`U`), una matriz diagonal de valores singulares (`Σ`), y una matriz de películas (`V^T`). Este enfoque permite reducir la dimensionalidad del problema, extrayendo las características latentes que representan las preferencias tanto de usuarios como de películas. Al multiplicar estas matrices, se pueden reconstruir las interacciones y predecir calificaciones faltantes con gran precisión. Este método es particularmente poderoso cuando se cuenta con datos dispersos, como es el caso típico en sistemas de recomendación.
+
+4. **Manejo del Inicio en Frío**:
+   - Ofrece estrategias de recomendación para nuevos usuarios sin historial.
+   - Aplica similitud de coseno basada en datos de los usuarios para encontrar usuarios parecidos.
+
+5. **Optimización del Rendimiento**:
+   - Utiliza el decorador `@lru_cache` para cachear resultados de recomendaciones frecuentes.
+   - Emplea operaciones vectorizadas de NumPy para cálculos más eficientes.
+
+6. **Flexibilidad**:
+   - Permite ajustar fácilmente la cantidad de recomendaciones.
+   - Proporciona métodos para verificar la existencia de usuarios y obtener las películas que han calificado.
+
+7. **Preprocesamiento de Datos**:
+   - Realiza la codificación de variables categóricas como género y ocupación para usarlas en modelos de machine learning.
+
+8. **Manejo de Casos Especiales**:
+   - Considera escenarios como usuarios sin películas calificadas o sin usuarios similares.
+
+Esta implementación equilibra la eficiencia computacional con técnicas avanzadas de recomendación, ofreciendo una solución sólida y adaptable para sistemas de recomendación de películas.
