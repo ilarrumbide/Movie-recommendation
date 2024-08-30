@@ -86,3 +86,29 @@ Los siguientes endpoints están disponibles:
 
 
 Este README proporciona una guía clara para configurar, ejecutar y utilizar el sistema de recomendación.
+
+## Estructura del Proyecto
+
+El proyecto está organizado de la siguiente manera:
+
+```bash
+sistema-recomendacion-peliculas/
+│
+├── ml-100k/                     # Directorio con datos del dataset MovieLens 100K
+├── models/                      # Directorio para almacenar modelos entrenados
+│   └── best_svd_model_center.pkl
+│
+├── .gitignore                   # Archivo para especificar archivos/directorios ignorados por Git
+├── README.md                    # Este archivo
+├── analisis_exploratorio.ipynb  # Notebook Jupyter para análisis exploratorio de datos
+├── cross_validation_metrics.txt # Métricas de validación cruzada
+├── main.py                      # Archivo principal con la implementación de la API FastAPI
+├── model.py                     # Implementación del modelo de recomendación
+├── no_center_cross_validation_metrics.txt
+├── preprocess_data.py           # Script para preprocesamiento de datos
+├── requirements.txt             # Lista de dependencias del proyecto
+├── test_1m_movies.py            # Script de prueba para 1 millón de películas
+├── train.py                     # Script para entrenar el modelo
+└── train_center.py              # Script para entrenar el modelo con centralización
+
+```
