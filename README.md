@@ -50,8 +50,9 @@ Sigue estos pasos para configurar y ejecutar el proyecto:
 
 Para ejecutar la aplicación, utiliza el siguiente comando:
 
-
-uvicorn app:app --reload
+ ```bash
+uvicorn main:app --reload
+```
 Esto iniciará el servidor FastAPI luego ve a http://127.0.0.1:8000/docs para probrar los Endpoints
 
 ## Endpoints de la API
