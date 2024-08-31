@@ -29,16 +29,16 @@ def preprocess_and_save_data():
     u_user['occupation_encoded'] = le_occupation.fit_transform(u_user['occupation'])
     
     # Save processed data to files
-    with open('user_movie_ratings.pkl', 'wb') as f:
+    with open('data/user_movie_ratings.pkl', 'wb') as f:
         pickle.dump(user_movie_ratings, f)
     
-    with open('u_user_encoded.pkl', 'wb') as f:
+    with open('data/u_user_encoded.pkl', 'wb') as f:
         pickle.dump(u_user, f)
     
-    with open('u_item.pkl', 'wb') as f:
+    with open('data/u_item.pkl', 'wb') as f:
         pickle.dump(u_item, f)
 
-    with open('u_data.pkl', 'wb') as f:
+    with open('data/u_data.pkl', 'wb') as f:
         pickle.dump(u_data, f)
     
     print("Data preprocessing completed and saved.")
