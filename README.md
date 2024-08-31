@@ -6,6 +6,26 @@ Este proyecto implementa un sistema de recomendación de películas utilizando t
 
 El objetivo de este proyecto fue desarrollar un sistema que, dado un usuario, sugiera las 10 mejores películas basadas en sus preferencias previas. El sistema debía ser implementado, documentado y subido a un repositorio en GitHub, con la posibilidad de agregar características opcionales para obtener puntos adicionales.
 
+## Enfoque
+
+Mi enfoque se centró en dos aspectos fundamentales:
+
+### Calidad de las Recomendaciones
+
+Me enfoqué en implementar técnicas avanzadas de filtrado colaborativo, incluyendo SVD (Singular Value Decomposition), para capturar patrones complejos en las preferencias de los usuarios. Además, desarrollé estrategias para manejar el problema del "cold start" para nuevos usuarios, asegurando recomendaciones relevantes incluso sin historial previo.
+
+### Optimización del Tiempo de Predicción
+
+Apliqué múltiples técnicas de optimización para minimizar el tiempo de respuesta:
+
+- Implementé la carga perezosa de datos para reducir el uso de memoria.
+- Utilicé caching (`@lru_cache`) para almacenar resultados de cálculos frecuentes.
+- Realicé operaciones vectorizadas con NumPy para cálculos más eficientes.
+- Serialicé los datos con Pickle para asegurar una carga rápida.
+
+Este enfoque dual me permitió crear un sistema de recomendación que no solo proporciona sugerencias precisas, sino que también lo hace de manera eficiente, cumpliendo con las demandas de velocidad requeridas en aplicaciones del mundo real.
+
+
 # Índice
 - [Requisitos previos](#requisitos-previos)
 - [Documentación de RecommendationSystem](#documentación-de-recommendationsystem)
@@ -28,8 +48,8 @@ Sigue estos pasos para configurar y ejecutar el proyecto:
 1. **Clona el repositorio:**
 
     ```bash
-    git clone https://github.com/tuusuario/sistema-recomendacion-peliculas.git
-    cd sistema-recomendacion-peliculas
+    git clone https://github.com/ilarrumbide/Movie-recommendation.git
+    cd Movie-recommendation
     ```
 
 2. **Crea y activa un entorno virtual (opcional pero recomendado):**
