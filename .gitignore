@@ -62,7 +62,7 @@ dmypy.json
 
 # Data and models
 #models/
-data/
+
 *.csv
 *.dat
 # *.pkl
