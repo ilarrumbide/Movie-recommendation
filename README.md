@@ -186,21 +186,6 @@ La Descomposición en Valores Singulares (SVD) es una técnica de factorización
 Esta implementación equilibra la eficiencia computacional con técnicas avanzadas de recomendación, ofreciendo una solución sólida y adaptable para sistemas de recomendación de películas.
 
 
-# Checklist de Entrega
-
-Por favor, marca con una "X" los ítems que has completado:
-
-1. [x] Exploración y Preparación de Datos  --> analisis_exploratorio.ipynb 
-2. [x] Desarrollo del Sistema de Recomendación --> model.py en este archivo se encuentra la implementación y aca el entrenamiento del modelo train_center.py  
-3. [x] Documentación y Entrega  --> Read me
-
-### Opcionales Completados
-
-1. [x] Implementación de API RESTful utilizando FastAPI  --> main.py  
-2. [ ] Despliegue en la Nube
-3. [x] Pruebas de Rendimiento con datasets de diferentes tamaños.   --> test_1m_movies.py 
-4. [ ] Uso de Herramientas Avanzadas (AWS SageMaker, Azure Machine Learning, Google AI Platform)
-
 ## Tecnologías Utilizadas
 
 - **Python**: Lenguaje principal para el desarrollo del sistema de recomendación.
